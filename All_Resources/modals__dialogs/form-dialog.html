@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal with Visibility and Opacity Animations</title>
+    <link rel="stylesheet" href="./form-dialog.css" />
+  </head>
+  <body>
+    <div class="container">This is styled with CSS Modules</div>
+    <button data-open-modal>Open Modal</button>
+
+    <dialog data-modal class="modal">
+      <div class="modal-content">
+        <form>
+          <input type="text" />
+          <button type="submit" formmethod="dialog">Cancel</button>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </dialog>
+    <script src="./form-dialog.js"></script>
+  </body>
+</html>

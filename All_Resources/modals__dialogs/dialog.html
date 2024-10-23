@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal with Visibility and Opacity Animations</title>
+    <link rel="stylesheet" href="./dialog.css" />
+  </head>
+ <body>
+    <div class="container">This is styled with CSS Modules</div>
+    <button data-open-modal>Open Modal</button>
+    
+    <dialog data-modal class="modal">
+      <div class="modal-content">
+        <p>This is a modal</p>
+        <button data-close-modal>Close Modal</button>
+      </div>
+    </dialog>
+    
+    <script>
+      const openButton = document.querySelector("[data-open-modal]");
+      const closeButton = document.querySelector("[data-close-modal]");
+      const modal = document.querySelector("[data-modal]");
+      
+      // Function to open the modal
+      openButton.addEventListener("click", () => {
+        modal.showModal();
+      });
+      
+      // Function to close the modal
+      closeButton.addEventListener("click", () => {
+        modal.close();
+      });
+    </script>
+  </body>
+</html>
+Improve
+
+</html>
